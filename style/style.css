@@ -1,0 +1,48 @@
+.container{
+  background-image: url("/imgs/pozadina.jpg");
+background-size: cover;
+background-position: bottom;}
+#submit{
+  margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-radius: 14px;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 16pt;
+}
+#input_text {
+  margin-left: 130px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 14px;
+  text-align: center;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 22pt;
+
+}
+.daily_temp1{
+  font-size: 13pt;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1))
+}
+
+.carousel-indicators li {
+  background-color: #282828;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}

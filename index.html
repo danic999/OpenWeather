@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>OpenWeatherMap Api</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body >
+ 
+  <section class="vh-100" style="background-color: #c1cfea">
+    <div class="container col-sm-12 py-0 h-100">
+      
+      <div
+        class="row d-flex justify-content-center align-items-center h-100"
+        style="color: #282828"
+      >
+      <div class="col-md-8 ">
+     
+  </div>
+
+
+
+        <div class="col-md-9 col-lg-7 col-xl-5">
+        
+
+
+
+          <div class="row form-group form-inline -2  " id="rowDiv">
+  
+      
+            <input type="text" name="city" id="input_text" class="form-control" placeholder="Grad">
+            <button id="submit" class="btn btn-primary  ">Pretraži</button>
+       
+        </div>
+          
+          <div class="card mb-4 gradient-custom" style="border-radius: 25px">
+            
+            <div class="card-body p-4">
+              <div id="demo1" class="carousel slide" data-ride="carousel">
+                
+               
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="d-flex justify-content-between mb-6 pb-2">
+                      <div>
+                        <h2 id="temp" class="display-2"><strong></strong></h2>
+                        <img src="" width="44px" alt="" id="country_flag">
+
+                        <p id="name" class="text-muted mb-0 h3">Grad</p>
+                        <p id="desc" class="text-muted mb-0 padding-top pt-2 "></p>
+                        
+
+                      </div>
+                    <div><img width="50px"><h4 id="pressure"></h4>
+                      <img width="50px"><h4 id="wind" ></h4></div>
+                      <div >
+                        <img  id="weather_icon"
+                          width="150px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4" style="border-radius: 25px">
+            <div class="card-body p-4">
+              <div id="demo2" class="carousel slide" data-ride="carousel">
+            
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div
+                      class="d-flex justify-content-around text-center mb-4 pb-3 pt-2"
+                    >
+                      <div class="flex-column">
+                        <p id="daily_temp1" class="large"><strong>21°C</strong></p>
+                        <img width="55px" src="" alt="" id="dimg0">
+                        <p id="hr" class="mb-0"><strong>12:00</strong></p>
+            
+                      </div>
+                      <div class="flex-column">
+                        <p id="daily_temp2" class="large"><strong>2°C</strong></p>
+                        <img width="55px" src="" alt="" id="dimg1">
+                        <p id="hr1" class="mb-0"><strong>1:00</strong></p>
+        
+                      </div>
+                      <div class="flex-column">
+                        <p id="daily_temp3" class="large"><strong>20°C</strong></p>
+                        <img width="55px" src="" alt="" id="dimg2">
+                        <p id="hr2" class="mb-0"><strong>2:00</strong></p>
+        
+                      </div>
+                      <div class="flex-column">
+                        <p id="daily_temp4" class="large"><strong>19°C</strong></p>
+                        <img width="55px" id="dimg3">
+                        <p id="hr3" class="mb-0"><strong>3:00</strong></p>
+                     
+                      </div>
+                      <div class="flex-column">
+                        <p id="daily_temp5" class="large"><strong>12°C</strong></p>
+                        <img  width="55px" id="dimg4">
+                        <p id="hr4" class="mb-0"><strong>4:00</strong></p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div                       class="d-flex justify-content-around text-center text-muted mb-0 h5 "
+                >Prognoza  za narednih 12h</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card" style="border-radius: 25px">
+            <div class="card-body p-4">
+              <div id="demo3" class="carousel slide" data-ride="carousel">
+            
+ 
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div
+                      class="d-flex justify-content-around text-center mb-4 pb-3 pt-2"
+                    >
+                      <div class="flex-column">
+                        <p id="temp0" class="large"><strong>21°C</strong></p>
+                        <img
+                          id="img3_0"
+                          width="55px"
+                          
+                        ></i>
+                        <p id= "day0" class="mb-0"><strong>Mon</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <p id="temp1" class="large"><strong>20°C</strong></p>
+                        <img
+                        id="img3_1"
+                        width="55px"
+
+                        ></i>
+                        <p id="day1" class="mb-0"><strong>Tue</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <p id="temp2" class="large"><strong>16°C</strong></p>
+                        <img
+                        id="img3_2"
+                        width="55px"
+
+                        ></i>
+                        <p id="day2"class="mb-0"><strong>Wed</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <p id="temp3" class="large"><strong>17°C</strong></p>
+                        <img
+                        id="img3_3"
+                        width="55px"
+
+                        
+                        ></i>
+                        <p id="day3" class="mb-0"><strong>Thu</strong></p>
+                      </div>
+                      <div class="flex-column">
+                        <p id="temp4" class="large"><strong>18°C</strong></p>
+                        <img id="img3_4"                           width="55px"
+
+                        ></i>
+                        <p id="day4" class="mb-0"><strong>Fri</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div                       class="d-flex justify-content-around text-center text-muted mb-0 h5 "
+                >Prognoza  za narednih 5 dana</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
